@@ -1,0 +1,25 @@
+# Editors
+*~
+*.swp
+# modelsim
+*.wlf
+*#
+work
+transcript
+# median synthesis
+synthese
+# quartus
+db
+*.vo
+*.hex
+*.pgm
+*.pof
+*.sof
+*.rpt
+*.summary
+*.pin
+*.done
+*.jdi
+*.qsf
+*.qpf
+incremental_db
