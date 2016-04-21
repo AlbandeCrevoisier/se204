@@ -12,6 +12,14 @@ module fpga #(parameter HDISP = 640, VDISP = 480)
                                          * auxiliary clock.
                                          */
 
+    `ifdef SIMULATION
+        localparam clk_counter_27_max = 27;
+        localparam clk_counter_50_max = 50;
+    `else
+        localparam clk_counter_27_max = 27_000_000;
+        localparam clk_counter_50_max = 50_000_000;
+
+
     assign fpga_LEDR0 = fpga_SW0;
     assign fpga_SEL_CLK_AUX = fpga_SW1;
     assign fpga_LEDR3 = fpga_NRST;
