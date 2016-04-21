@@ -51,5 +51,6 @@ module fpga #(parameter HDISP = 640, VDISP = 480)
                 clk_counter_50 <= 0;
             end
         end
+
 endmodule
 
