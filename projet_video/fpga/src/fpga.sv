@@ -1,14 +1,14 @@
 module fpga #(parameter HDISP = 640, VDISP = 480)
              (input fpga_CLK,           /* 50MHz clock */
-             (input fpga_CLK_AUX,       /* 27MHz auxiliary clock */
-             (input fpga_SW0,           /* command 0/1 */
-             (input fpga_SW1,           /* command 0/1 */ 
-             (input fpga_NRST,          /* command 0/1 */
-             (output fpga_LEDR0,        /* LED 0 */
-             (output fpga_LEDR1,        /* LED 1 */
-             (output fpga_LEDR2,        /* LED 2 */
-             (output fpga_LEDR3,        /* LED 3 */
-             (output fpga_SEL_CLK_AUX); /* Setting this signal to 1 enables the
+              input fpga_CLK_AUX,       /* 27MHz auxiliary clock */
+              input fpga_SW0,           /* command 0/1 */
+              input fpga_SW1,           /* command 0/1 */ 
+              input fpga_NRST,          /* command 0/1 */
+              output fpga_LEDR0,        /* LED 0 */
+              output fpga_LEDR1,        /* LED 1 */
+              output fpga_LEDR2,        /* LED 2 */
+              output fpga_LEDR3,        /* LED 3 */
+              output fpga_SEL_CLK_AUX); /* Setting this signal to 1 enables the
                                          * auxiliary clock.
                                          */
 
