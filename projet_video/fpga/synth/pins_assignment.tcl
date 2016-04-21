@@ -35,6 +35,9 @@ set_global_assignment -name RESERVE_ASDO_AFTER_CONFIGURATION "AS OUTPUT DRIVING 
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL"  -to fpga_*
 set_instance_assignment -name CURRENT_STRENGTH_NEW "8MA" -to fpga_*
 
+# Slew rate
+set_instance_assignment -name SLEW_RATE 1 -to fpga_*
+
 ##### PLACEZ ICI VOTRE LISTE DE PINS PROPREMENT DITE
 set_location_assignment PIN_AF14 -to fpga_CLK
 set_location_assignment PIN_H15 -to fpga_CLK_AUX
